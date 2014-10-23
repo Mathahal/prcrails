@@ -1,0 +1,9 @@
+= form_tag action: :create do
+  div.field
+    = label :book, :isbn
+    br
+    = text_field :book, :isbn, size: 25
+  div.field
+    = label :book, :title
+    br
+    = text_field :book, :title, size: 25

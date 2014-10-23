@@ -1,2 +1,3 @@
-h1 View#keyword
-p Find me in app/views/view/keyword.html.slim
+= form_tag({controller: :keyword, action: :search} ,id: :fm,class: :search) do
+  = text_field_tag :keywd, '', size: 30
+  = submit_tag 'search'
