@@ -1,8 +1,6 @@
 class ViewController < ApplicationController
-  def keyword
-  end
-
-  def form_tag
-    @book = Book.new
+  def select
+    @review = Review.new
+    @authors = Author.all
   end
 end

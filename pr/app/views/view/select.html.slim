@@ -1,0 +1,2 @@
+= form_for @review do |f|
+  = f.grouped_collection_select :book_id, @authors, :books, :name, :id, :title

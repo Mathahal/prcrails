@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
   match ':controller(/:action(/:id))', via: [ :get, :post, :patch ]
-  
-  get 'view/keyword'
 
-  resources :books
 
   resources :fan_comments
 
@@ -13,7 +10,7 @@ Rails.application.routes.draw do
 
   resources :users
 
-  resources :view
+  resources :books
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
