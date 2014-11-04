@@ -1,2 +1,15 @@
-= form_for @review do |f|
-  = f.grouped_collection_select :book_id, @authors, :books, :name, :id, :title
+/ = form_for @review do |f|
+/   = f.grouped_collection_select :book_id, @authors, :books, :name, :id, :title
+
+
+
+/ = form_for(@book) do |f|
+/   = f.collection_select :publish, @books, :publish, :publish
+
+
+/ = select_tag :publish, options_from_collection_for_select(@books, :id, :price, 2)
+
+
+
+= form_for(@book) do |f|
+  = f.datetime_select :published, :use_month_numbers => true, :include_seconds => true
